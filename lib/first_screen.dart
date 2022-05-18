@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart'; 
-import 'package:firebase/login_page.dart'; 
-import 'package:firebase/sign_in.dart'; 
+import 'package:firebase/pages/login_page.dart'; 
+import 'package:firebase/helper/sign_in.dart'; 
 
-class FirstScreen extends StatelessWidget { 
+class FirstScreen extends StatelessWidget {
+  String? get imageUrl => null;
+  String? get name => null;
+  String? get email => null;
+ 
   @override
   Widget build(BuildContext context) { 
     return Scaffold( 
@@ -21,7 +25,7 @@ class FirstScreen extends StatelessWidget {
             children: <Widget>[ 
               CircleAvatar( 
                 backgroundImage: NetworkImage( 
-                  imageUrl, 
+                  imageUrl!, 
                 ), 
                 radius: 60, 
                 backgroundColor: Colors.transparent, 
@@ -35,7 +39,7 @@ class FirstScreen extends StatelessWidget {
                 color: Colors.black54), 
               ), 
               Text( 
-                name, 
+                name!, 
                 style: TextStyle( 
                 fontSize: 25, 
                 color: Colors.deepPurple, 
@@ -50,7 +54,7 @@ class FirstScreen extends StatelessWidget {
                 color: Colors.black54), 
               ), 
               Text( 
-                email, 
+                email!, 
                 style: TextStyle( 
                 fontSize: 25, 
                 color: Colors.deepPurple, 
@@ -81,5 +85,7 @@ class FirstScreen extends StatelessWidget {
         ), 
       ), 
     ); 
-  } 
+  }
+
+  void signOutGoogle() {} 
 } 

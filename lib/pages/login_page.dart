@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart'; 
-import 'package:firebase/sign_in.dart'; 
+import 'package:firebase/helper/sign_in.dart'; 
 import 'package:firebase/first_screen.dart'; 
 
 class LoginPage extends StatefulWidget { 
@@ -52,7 +52,7 @@ class _LoginPageState extends State<LoginPage> {
             mainAxisSize: MainAxisSize.min, 
             mainAxisAlignment: MainAxisAlignment.center, 
               children: <Widget>[ 
-                Image(image: AssetImage("assets/google_logo.png"), height: 35.0), 
+                Image(image: AssetImage("build/flutter_assets/images/google_logo.png"), height: 35.0), 
                 Padding( 
                   padding: const EdgeInsets.only(left: 10), 
                   child: Text( 
@@ -67,5 +67,7 @@ class _LoginPageState extends State<LoginPage> {
           ), 
         ), 
       ); 
-  } 
+  }
+
+  signInWithGoogle() {} 
 }
