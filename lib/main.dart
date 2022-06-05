@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Login',
+      title: 'Faiza Nur Abida / -2031710068',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
