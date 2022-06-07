@@ -11,7 +11,7 @@ class SecondScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("PRIESCA LEYLYA SYAFITRI / 2031710176"),
+        title: const Text("FAIZA NUR ABIDA / 2031710068"),
       ),
       body: Container(
         decoration: const BoxDecoration(
